@@ -46,7 +46,8 @@ body {
 }
 
 .euro {
-    font-weight: 700;
+    /*** change from 700 to 600 according to the figma ****/
+    font-weight: 600;
 }
 
 .neutralStar {
@@ -110,7 +111,8 @@ body {
 
 .populaires-cards .card-subtitle {
     margin: 0;
-}
+    font-weight: 400;
+    }
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
