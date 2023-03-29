@@ -9,12 +9,22 @@
     --filter-bg-color: #DEEBFF;
 }
 
+.website {
+    max-width: 1340px;
+    margin: auto;
+    width: 100%;
+}
+
 .fa-solid {
     color: var(--main-color);
 }
 
 .icon-in-black {
     color: black;
+}
+
+.icon-in-white {
+    color: white;
 }
 
 body {
@@ -38,9 +48,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
+    padding: 0 50px;
 }
 
 .logo {
@@ -61,7 +70,6 @@ a {
 }
 
 nav a{
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -82,11 +90,10 @@ nav a:hover {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    padding: 0 50px;
 }
 
 .info-group {
@@ -98,113 +105,60 @@ nav a:hover {
     width: 100%;
 }
 
-.search-bar {
-    /* Auto layout */
+.search-form {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0px;
-    gap: 24px;
-
-    position: relative;
-    width: 377px;
     height: 49px;
-
-    /* White */
-    background: #FFFFFF;
-
-    /* Grey */
-    border: 1px solid #F2F2F2;
-    border-radius: 15px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
+
+
 
 .search-icon {
     width: 50px;
-    height: 49px;
-    position:absolute;
-    left: 0px;
-    top: 0px;
-
-    /* Grey */
-    background: #F2F2F2;
-
-    color: #000000;
-
-    /* Grey */
-    border: 1px solid #F2F2F2;
+    height: 100%;
+    background: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
     border-radius: 15px 0px 0px 15px;
-
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.search-text{
-    height: 49px;
-    text-align: center;
-    border: none;
-    /* Marseille, France */
+.search-text {
 
-    width: 147px;
-    height: 21px;
-
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
     text-align: center;
-    margin-left: 74px;
+    height: 100%;
+    border: 1px solid var(--main-bg-color);
+    padding: 0px;
+    width: 200px;
 
-    /* Black */
-    color: #000000;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .search-button {
-        /* Auto layout */
-    padding: 15px 16px;
-    gap: 10px;
-    position:absolute;
-    left: 245px;
-    top: 0px;
-
-    width: 132px;
-    height: 49px;
-
-    /* Blue */
-    background: #0065FC;
-
-    /* Blue */
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-
-    /* White */
-    color: #FFFFFF;
-
+        background: var(--main-color);
+        border: 1px solid var(--main-color);
+        border-radius: 0px 15px 15px 0px;
+        height: 100%;
+        padding: 0px 16px;
+    
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        
+        color: #FFFFFF;
 }
+
+.display-search-mobile {
+    display: none;
+}
+
 
 .filter-group {
     display: flex;
@@ -218,13 +172,10 @@ nav a:hover {
 }
 
 .filter-title {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
-    margin-top: 16px;
     
     color: #000000;
 }
@@ -234,9 +185,8 @@ nav a:hover {
 .filter-bar {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 668px;
+    max-width: 568px;
 }
 
 .filter-button {
@@ -244,9 +194,10 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 19px;
-    gap: 10px;
+    padding: 4px 10px;
+    gap: 5px;
     height: 50px;
+    margin: 0px 4px;
    
     /* Grey/Tint2 */
     border: 2px solid #D9D9D9;
@@ -254,7 +205,7 @@ nav a:hover {
 }
 
 .filter-button:hover {
-    background: #DEEBFF;
+    background: var(--filter-bg-color);
 }
 
 .information {
@@ -271,7 +222,7 @@ nav a:hover {
     box-sizing: border-box;
     text-align: center;
     margin: 14px;
-      justify-content: center;
+    justify-content: center;
 }
 
 .icon-sized-to-22px {
@@ -279,7 +230,6 @@ nav a:hover {
 }
 
 .filter-label {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -302,6 +252,7 @@ nav a:hover {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    flex-grow: 1;
 }
 
 .card img {
@@ -331,7 +282,7 @@ nav a:hover {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 15px 30px;
     box-sizing: border-box;
 }
 
@@ -362,14 +313,15 @@ nav a:hover {
     justify-content: space-between;
     width: 32%;
     min-width: 180px; 
-    margin-top: 30px;    
+    padding-bottom: 15px;  
 }
+
 
 .marseille-hebergement-cards img {
     max-height: 120px;
     height: 50%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
     width: 100%;
 }
 
@@ -402,8 +354,8 @@ nav a:hover {
 .populaires-cards img {
     width: 33%;
     height: 134px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 .populaires-cards .card-content {
@@ -441,20 +393,29 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22%; 
+    height: 100%;
+
 }
 
 .marseille-activites-cards .card-title {
     padding: 0px 19px ;
+    margin: auto 0px
 }
+
+.marseille-activites-cards .article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%; 
+}
+
 
 .marseille-activites-cards img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: auto;
-    height: 90%;
-    max-height: 380px;
-    
+    height: 85%;
+    max-height: 35vh;    
 }
 
 .marseille-activites-cards {
@@ -464,21 +425,27 @@ nav a:hover {
 }
 
 /* footer */
+
+.footer {
+    padding: 0 50px;
+}
+
+
 .footer-container {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1340px;
-    margin: 0 50px;
-    box-sizing: border-box;
     background-color: var(--main-bg-color);
+    padding: 0px 20px;
+
 }
 
 
 
-.footer-link {
-    font-family: 'Raleway';
+.footer-links {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -487,13 +454,16 @@ nav a:hover {
     flex-direction: column;
 }
 
+.footer-link {
+    margin-bottom: 15px;
+}
 
 .footer-title  {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    margin : 15px 0px;
 }
 
 .footer-group {
@@ -501,10 +471,7 @@ nav a:hover {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
-    gap: 15px;
-    min-width: 220px;
-    width: 30%;
+    width: 28%;
 }
 
 
@@ -513,6 +480,24 @@ nav a:hover {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .nav a{
+        font-size: 14px;   
+    }
+
+    .search-text {
+        font-size: 15px;
+        }
+
+    .search-button {
+        font-size: 15px;
+}
+
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -532,17 +517,55 @@ nav a:hover {
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
-        width: 30%;
+    .display-search-mobile {
+        display: none;
     }
 
-    .populaires-cards .card-title {
+    .filter-title {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .icon-sized-to-22px {
+        /*Resized to 18px for tablet*/
+        font-size: 18px;
+    }
+
+    .filter-label {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .section-title {
+        font-size: 18px;
+    }
+    
+
+    .populaires-cards .card {
+        width: 24vw;
+    }
+
+    .card-title {
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .card-subtitle {
         font-size: 13px;
     }
+    
+    .marseille-activites-cards img {
+        max-height: 18vh;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+
+    .footer-title  {
+        font-size: 15px;
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
