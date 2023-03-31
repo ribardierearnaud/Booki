@@ -525,6 +525,10 @@ nav a:hover {
         justify-content: space-between;
     }
 
+    .marseille-hebergement-cards img {
+        max-height: 86px;
+    }
+    
     .display-search-mobile {
         display: none;
     }
@@ -646,6 +650,7 @@ nav a:hover {
 
     .filter-bar {
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .filter-button {
